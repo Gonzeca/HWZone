@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/HWZone/static/js/main.a965f2c3.js",
+    "static/media/hwzone_logo.png": "/HWZone/static/media/hwzone_logo.95f46e62b506822f8ddd.png",
+    "index.html": "/HWZone/index.html",
+    "main.a965f2c3.js.map": "/HWZone/static/js/main.a965f2c3.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.a965f2c3.js"
+  ]
+}
