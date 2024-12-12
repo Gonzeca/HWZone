@@ -1,0 +1,15 @@
+.cart-box img {
+    width: 40px;
+    filter: invert(20%) sepia(93%) saturate(7179%) hue-rotate(339deg) brightness(93%) contrast(116%);
+}
+
+.cart-counter {
+    display: block;
+    position: relative;
+    right: -22px;
+    bottom: 23px;
+    width: 23px;
+    text-align: center;
+    border-radius: 50%;
+    background: white;
+}

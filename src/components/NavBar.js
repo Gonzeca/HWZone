@@ -1,4 +1,5 @@
-
+import "./NavBar.css";
+import CartWidget from './CartWidget';
 
 const NavBar = () => {
     const logo = require('../media/hwzone_logo.png');
@@ -6,9 +7,12 @@ const NavBar = () => {
     return(
         <header>
             <img className='' src={logo}></img>
-            <nav><a href='#'>Productos</a></nav>
-            <nav><a href='#'>Productos</a></nav>
-            <nav><a href='#'>Soporte</a></nav>
+            <div className='navigator'>
+                <a href='#'><nav>Productos</nav></a>
+                <a href='#'><nav>Armar PC</nav></a>
+                <a href='#'><nav>Soporte</nav></a>
+            </div>
+            <CartWidget />
         </header>
     );
 }

@@ -1,0 +1,26 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+}
+
+header > img {
+    width: 300px;
+}
+
+header .navigator {
+    display: flex;
+    gap: 70px;
+}
+
+header .navigator a nav {
+    font-size: 20px;
+    letter-spacing: 8px;
+    transition: color 0.5s;
+    color: var(--terciary-color);
+}
+
+header .navigator a nav:hover {
+    color: var(--primary-color);
+}

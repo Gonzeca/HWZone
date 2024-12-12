@@ -1,0 +1,45 @@
+main {
+    padding: 20px;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.carousel section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 300px;
+    padding: 10px;
+    border: solid var(--terciary-color) 1px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.carousel section .product-top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.carousel section .product-top .product-img {
+    width: 120px;
+}
+
+.carousel section .product-top span {
+    padding-bottom: 100px;
+}
+
+.carousel section .product-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.carousel section .product-bottom button .add-cart {
+    filter: invert(20%) sepia(93%) saturate(7179%) hue-rotate(339deg) brightness(93%) contrast(116%);
+}
