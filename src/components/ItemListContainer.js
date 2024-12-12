@@ -1,7 +1,7 @@
 import "./ItemListContainer.css";
 import add_cart from "../media/add_cart.svg";
 
-const ItemListContainer = () => {
+const ItemListContainer = (props) => {
     const cpu = require("../media/AMD-RYZEN-5700G.jpg");
     const mother = require("../media/ASUS-PRIME-A520M-K.jpg");
     const gpu = require("../media/NVIDIA-RTX-3070.jpg");
@@ -9,7 +9,7 @@ const ItemListContainer = () => {
 
     return(
         <main>
-            <h1>Descubrí nuestros productos destacados</h1>
+            <h1>{props.client}, descubrí nuestros productos destacados</h1>
             <div className="carousel">
                 <section>
                     <div className="product-top">

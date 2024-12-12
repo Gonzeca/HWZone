@@ -5,8 +5,8 @@ import ItemListContainer from "./components/ItemListContainer";
 const HWZone = () => {
     return(
         <>
-            <NavBar client="Nombre"/>
-            <ItemListContainer />
+            <NavBar/>
+            <ItemListContainer client="Nombre"/>
         </>
     )
 }
