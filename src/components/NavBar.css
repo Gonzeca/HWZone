@@ -5,7 +5,7 @@ header {
     background-color: var(--secondary-color);
 }
 
-header > img {
+header a > img {
     width: 300px;
 }
 
@@ -14,13 +14,17 @@ header .navigator {
     gap: 70px;
 }
 
-header .navigator a nav {
+header .navigator a {
     font-size: 20px;
     letter-spacing: 8px;
     transition: color 0.5s;
     color: var(--terciary-color);
 }
 
-header .navigator a nav:hover {
+header .navigator a:hover {
     color: var(--primary-color);
+}
+
+header .cart-box {
+    margin-top: 24.5px;
 }

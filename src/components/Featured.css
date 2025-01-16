@@ -1,0 +1,9 @@
+main {
+    padding: 20px;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}

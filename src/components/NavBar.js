@@ -1,18 +1,19 @@
 import "./NavBar.css";
 import CartWidget from './CartWidget';
+import { Link } from "react-router-dom";
 
-const NavBar = () => {
+const NavBar = (props) => {
     const logo = require('../media/hwzone_logo.png');
 
     return(
         <header>
-            <img className='' src={logo}></img>
+            <Link to="/"> <img className='' src={logo}></img> </Link>
             <div className='navigator'>
-                <a href='#'><nav>Productos</nav></a>
-                <a href='#'><nav>Armar PC</nav></a>
-                <a href='#'><nav>Soporte</nav></a>
+                <Link to="/products">Productos</Link>
+                <Link to="/products">Armar PC</Link>
+                <Link to="/products">Soporte</Link>
             </div>
-            <CartWidget />
+            <CartWidget cartItems={props.cartItems > 9 ? "9+" : props.cartItems}/>
         </header>
     );
 }

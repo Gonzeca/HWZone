@@ -1,0 +1,30 @@
+[
+    {
+        "id": 0,
+        "category": "cpu",
+        "name": "AMD RYZEN 5700G",
+        "img": "AMD-RYZEN-5700G.jpg",
+        "price": "158.399"
+    },
+    {
+        "id": 1,
+        "category": "gpu",
+        "name": "NVIDIA RTX 3070",
+        "img": "NVIDIA-RTX-3070.jpg",
+        "price": "679.999"
+    },
+    {
+        "id": 2,
+        "category": "motherboard",
+        "name": "ASUS PRIME A520M-K",
+        "img": "ASUS-PRIME-A520M-K.jpg",
+        "price": "75.999"
+    },
+    {
+        "id": 3,
+        "category": "ram",
+        "name": "MEMORIA RAM 8GB DDR4 3200MHz KINGSTON FURY BEAST WHITE",
+        "img": "KINGSTON-FURY-BEAST-WHITE.jpg",
+        "price": "38.299"
+    }
+]

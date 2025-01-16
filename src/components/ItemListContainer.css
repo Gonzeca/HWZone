@@ -1,14 +1,4 @@
-main {
-    padding: 20px;
-}
-
-.carousel {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-}
-
-.carousel section {
+section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -20,26 +10,26 @@ main {
     background-color: white;
 }
 
-.carousel section .product-top {
+section .product-top {
     display: flex;
     align-items: center;
     gap: 15px;
 }
 
-.carousel section .product-top .product-img {
+section .product-top .product-img {
     width: 120px;
 }
 
-.carousel section .product-top span {
+section .product-top span {
     padding-bottom: 100px;
 }
 
-.carousel section .product-bottom {
+section .product-bottom {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.carousel section .product-bottom button .add-cart {
+section .product-bottom button .add-cart {
     filter: invert(20%) sepia(93%) saturate(7179%) hue-rotate(339deg) brightness(93%) contrast(116%);
 }
