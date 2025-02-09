@@ -1,10 +1,20 @@
+import { useEffect, useState } from "react";
 import productsList from "../productsList.json";
 import AddCart from "./AddCart";
 const { useParams } = require("react-router")
 
 const ItemDetailContainer = (props) => {
-    const {id} = useParams();
-    console.log(id);
+    console.log(useParams());
+    const { id } = useParams();
+    const [idData, setIdData] = useState(null);
+    
+    useEffect(() => {
+        console.log("Received id:", id);
+
+        return () => {
+            console.log("Will change id:", id);
+        }
+    }, [id])
 
     return(
         <main>

@@ -2,15 +2,31 @@ import "./HWZone.css";
 import NavBar from "./components/NavBar";
 import Featured from "./components/Featured";
 import Products from "./components/Products";
-import { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ItemDetailContainer from "./components/ItemDetailContainer";
+import { useEffect, useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { doc, getDoc, getFirestore } from "firebase/firestore";
+import { firebaseApp } from "."
 
 const HWZone = () => {
     const [cartItems, setCartItems] = useState(0);
     const addToCart = () => {
         setCartItems(cartItems + 1);
     }
+
+    useEffect(() => {
+        const db = getFirestore(firebaseApp);
+    
+        const biciRef = doc(db, "items", "AIzaSyCfhaMis5QAVTJctNvJxH1k7TirPaQJv-Y");
+    
+        getDoc(biciRef).then((snapshot) => {
+            if (snapshot.exists()) {
+                console.log(snapshot.id, doc.data());
+            } else {
+                console.log("Item no encontrado");
+            }
+        });
+    }, []);
 
     return(
         <>

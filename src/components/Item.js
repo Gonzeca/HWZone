@@ -2,10 +2,8 @@ import { Link, useParams } from "react-router";
 import AddCart from "./AddCart"
 
 const Item = (props) => {
-    const {id} = useParams();
-    console.log(id);
     return(
-        <Link to="/item/:id">
+        <Link to={`/item/${props.itemId}`}>
             <section>
                 <div className="product-top">
                     <img className="product-img" src={require("../media/" + props.itemImg)} />

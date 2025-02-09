@@ -8,7 +8,7 @@ const ItemListContainer = (props) => {
         <>
             {productsList.map(product => {
                 if (props.category === null || props.category === undefined || props.category === product.category) {
-                    return(<Item key={product.id} itemName={product.name} itemImg={product.img} itemPrice={product.price} addToCart={props.addToCart} />);
+                    return(<Item key={product.id} itemId={product.id} itemName={product.name} itemImg={product.img} itemPrice={product.price} addToCart={props.addToCart} />);
                 }
             })}
         </>
